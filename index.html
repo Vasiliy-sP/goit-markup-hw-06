@@ -42,6 +42,76 @@
                         </li>
                     </ul>
                 </address>
+                <button class="burger" type="button" data-mobile-open><svg class="burger-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-burger"></use>
+                </svg></button>
+            </div>
+
+                <!-- /* mobile menu */ -->
+
+            <div class="mobile-menu" data-mobile>
+                <div class="container mobile-menu-container">
+                    <button class="mobile-menu-close" data-mobile-close>
+                        <svg class="" width="8" height="8">
+                            <use href="./images/icons.svg#close-modal"></use>
+                        </svg>
+                    </button>
+                    <nav class="mobile-menu-nav">
+                    <ul class="mobile-nav-ul">
+                            <li class="mobile-nav-li">
+                                <a href="./index.html" class="mobile-menu-a">Studio</a>
+                            </li>
+                            <li class="mobile-nav-li">
+                                <a href="" class="mobile-menu-a">Portfolio</a>
+                            </li>
+                            <li class="mobile-nav-li">
+                                <a href="" class="mobile-menu-a">Contacts</a>
+                            </li>
+                    </ul>
+                </nav>
+                <address class="">
+                    <ul class="mobile-social">
+                        <li class="mobil-social-li">
+                            <a href="mailto:info@devstudio.com" class="">info@devstudio.com</a>
+                        </li>
+                        <li class="mobil-social-li">
+                            <a href="tel:+110001111111" class="">+11 (000) 111-11-11</a>
+                        </li>
+                    </ul>
+                </address>
+                <ul class="mobile-address">
+                    <li class="mobile-icons">
+                        <a href="https://www.instagram.com" class="mobile-social-a">
+                            <svg class="mobile-svg" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-icons">
+                        <a href="https://www.twitter.com" class="mobile-social-a">
+                            <svg class="mobile-svg" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-icons">
+                        <a href="https://www.facebook.com" class="mobile-social-a">
+                            <svg class="mobile-svg" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-icons">
+                        <a href="https://www.linkedin.com" class="mobile-social-a">
+                            <svg class="mobile-svg" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+
             </div>
         </header>
  
@@ -49,7 +119,7 @@
 
              <!--section1-->
 
-        <section class="business">
+        <section class="business hidden">
             <div class="container">
                 <h1 class="business-text">Effective Solutions for Your Business </h1>
                 <button class="button" type="button" data-modal-open>Order Service</button>
@@ -58,7 +128,7 @@
 
                   <!--section2-->
 
-        <section class="paragraph">
+        <section class="paragraph hidden">
             <div class="container">
                 <h2 class="visually-hidden">
                     #
@@ -118,8 +188,8 @@
 
               <!--section3-->
 
-        <section class="team-our">
-            <div class="container">
+        <section class="team-our hidden">
+            <div class="container container-team">
                 <h2 class="team">Our Team</h2>
                 <ul class="team-photo">
                     <li class="team-li">
@@ -276,7 +346,7 @@
 
                  <!--section4-->
 
-        <section class="portfolio">
+        <section class="portfolio hidden">
             <div class="container">
                 <h2 class="our-portfolio">Our Portfolio</h2>
                 <ul class="service-photo">
@@ -288,8 +358,6 @@
                     <div class="name-s">
                         <h3 class="our-portfolio-b">Banking App</h3>
                         <p class="text-portfolio">App</p>
-                        <div class="name-t">
-                        </div>
                     </div>
                 </li>
                 <li class="li-name">
@@ -417,7 +485,7 @@
     </footer>
 
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop hidden" data-modal>
         <div class="modal">
             <button class="modal-close-btn" type="button" data-modal-close>
                 <svg class="close-button" width="8" height="8">
@@ -476,6 +544,7 @@
 
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
 
 </body>
