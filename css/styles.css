@@ -255,7 +255,7 @@ a {
     padding: 72px 0;
     margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/table.jpg);
+        url(../images/section-1/desk-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -981,14 +981,14 @@ a {
     .business {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/table.jpg);
+            url(../images/section-1/tab-min.jpg);
     }
 
     @media (resolution: 192dpi) {
         .business {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                url(../images/table.jpg);
+                url(../images/section-1/tab@2x-min.jpg);
         }
     }
     .paragraph {
@@ -1119,24 +1119,25 @@ a {
         }
 
         .nav-list-contact-a {
-    display: block;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 24px 0;
-    line-height: 1.5;
-    font-size: 16px;
-    letter-spacing: 0.02em;
-}
+            display: block;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            padding: 24px 0;
+            line-height: 1.5;
+            font-size: 16px;
+            letter-spacing: 0.02em;
+        }
+
         .business {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                url(../images/hero.jpg);
+                url(../images/section-1/desk-min.jpg);
         }
 
         @media (resolution: 192dpi) {
             .business {
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                         rgba(46, 47, 66, 0.7)),
-                    url(../images/table.jpg);
+                    url(../images/section-1/desk@2x-min.jpg);
             }
         }
 
@@ -1240,16 +1241,23 @@ a {
 
         .footer {
             padding: 100px 0;
+            padding-top: 96px;
+            padding-bottom: 96px;
         }
 
         .container-twoo {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             align-items: baseline;
-            margin: 0 auto;
+
+            row-gap: 72px;
+            column-gap: 72px;
         }
 
         .footer-logo {
-            margin-right: 120px;
+            margin: 0 auto;
+            max-width: 288px;
         }
 
         .footer-text {
