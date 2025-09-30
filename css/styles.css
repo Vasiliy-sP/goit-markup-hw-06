@@ -243,7 +243,7 @@ a {
 }
 
 
-/* ================== section1 =================== */
+/* ================== section1================= */
 
 .button:hover,
 .button:focus {
@@ -255,10 +255,18 @@ a {
     padding: 72px 0;
     margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/section-1/desk-min.jpg);
+        url(../images/section-1/desk\ mob-1min.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+@media (resolution: 192dpi) {
+    .business {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/section-1/image\ mob@2x-1-min.jpg);
+    }
 }
 
 .business-text {
@@ -884,16 +892,7 @@ a {
 
              /* ========--media--768--========= */
 
-@media screen and (max-width:768px) {
 
-    @media (resolution: 192dpi) {
-        .business {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)),
-                url(../images/section-1/tab@2x-min.jpg);
-        }
-    }
-}
 
 @media screen and (min-width:768px) {
     .container {
@@ -999,14 +998,14 @@ a {
     .business {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/section-1/tab-min.jpg);
+            url(../images/section-1/desk\ tab-1min.jpg);
     }
 
     @media (resolution: 192dpi) {
         .business {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                url(../images/section-1/tab@2x-min.jpg);
+                url(../images/section-1/image\ tab@2x-min.jpg);
         }
     }
     .paragraph {
@@ -1148,14 +1147,14 @@ a {
         .business {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                url(../images/section-1/desk-min.jpg);
+                url(../images/section-1/desk\ desk-1min.jpg);
         }
 
         @media (resolution: 192dpi) {
             .business {
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                         rgba(46, 47, 66, 0.7)),
-                    url(../images/section-1/desk@2x-min.jpg);
+                    url(../images/section-1/desk\ desk@2x-min.jpg);
             }
         }
 
